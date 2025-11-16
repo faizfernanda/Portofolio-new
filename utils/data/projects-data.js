@@ -35,11 +35,10 @@ export const projectsData = [
     id: 3,
     name: "Docking & Investment Monitoring – PT Pertamina International Shipping",
     description:
-      "Membangun modul Docking Monitoring ... (isi lengkap Anda sendiri)",
+      "Membangun modul Docking Monitoring yang mencakup pelacakan biaya docking (plan vs actual), dashboard performa proyek (budget, time, durasi rata-rata), serta visualisasi informasi kapal seperti spesifikasi dan progress status docking melalui grafik interaktif. Mengembangkan modul Investment Monitoring untuk memantau alokasi dana proyek (plan, actual, commitment, available), progress fisik investasi, dan status event vessel (on progress, finish). Sistem ini digunakan untuk membantu tim engineering dan operasional dalam pengambilan keputusan berbasis data secara real-time.",
     tools: [".NET (MVC)", "C#", "SQL Server", "Chart.js", "JavaScript"],
     role: ".NET Developer",
 
-    // Tambahkan ini:
     images: [
       "/image/Projects/dashboard monitoring/1.png",
       "/image/Projects/dashboard monitoring/2.png",
@@ -50,6 +49,7 @@ export const projectsData = [
     code: "",
     demo: "",
   },
+
 
   {
     id: 4,

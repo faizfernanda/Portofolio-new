@@ -1,52 +1,98 @@
 export const projectsData = [
-    {
-        id: 1,
-        name: 'AI Powered Financial App',
-        description: "Me and my team built an AI-powered financial mobile application. I have developed API using Express, Typescript, OpenAI, AWS, and MongoDB. Used OTP via AWS SES, Google, and Facebook for the authentication system. Built AI assistants using OpenAI's latest model and trained using our dataset. Voice messages are converted to text using AWS Transcribe. The app fetches data from Google Sheets and generates a PDF term sheet, sent via AWS SES.",
-        tools: ['Express', 'MongoDB', 'OpenAI API', 'AWS SES', 'AWS S3', 'Node Mailer', 'Joi', 'Puppeteer', 'EC2', 'PM2', 'Nginx'],
-        role: 'Backend Developer',
-        code: '',
-        demo: '',
-    },
-    {
-        id: 2,
-        name: 'Travel Agency App',
-        description: 'I have designed and developed a full-stack web app for 2Expedition, a travel agency in Armenia. I created the UI using NextJS, Typescript, MUI, TailwindCSS, Google Maps, Sun-Editor, and React Slick. The app supports multiple languages and currencies. I developed the API using NestJS, Typescript, MySQL, TypeORM, AWS, and Nodemailer. I deployed the front-end app to AWS Amplify and the back-end app to AWS EC2.',
-        tools: ['NextJS', 'Tailwind CSS', "Google Maps", "NestJS", "TypeScript", "MySQL", "AWS S3", "Sun-Editor", "Gmail Passkey"],
-        role: 'Full Stack Developer',
-        code: '',
-        demo: '',
-    },
-    {
-        id: 3,
-        name: 'AI Powered Real Estate',
-        description: 'My team built an AI-based real estate app using Replicate API and OpenAI. We used Express, Typescript, OpenAI, Replicate, Stripe, and Mongoose to develop the API. We utilized NextJS, Formik, TailwindCSS, and other npm libraries for the UI. We have trained multiple AI assistants using the latest GPT model and integrated Replicate API for image processing. We added role-based auth, subscription plans, Cron job scheduling, and payment integration with Stripe.',
-        tools: ['React', 'Bootstrap', 'SCSS', 'Stripe', 'Express', 'TypeScript', 'MongoDB', 'Azure Blob', 'OpenAI API', 'Replicate AI', 'Cronjob', 'JWT'],
-        code: '',
-        role: 'Full Stack Developer',
-        demo: '',
-    },
-    {
-        id: 4,
-        name: 'Newsroom Management',
-        description: "My team and I developed a newspaper management dashboard application called Newsroom Management. As a front-end developer, I worked on creating the dashboard using NextJS, Material UI, Redux, Calendar, and other necessary npm libraries. We used React Redux to manage the application's state and React-hook-form and Sun Editor to handle forms.",
-        tools: ['NextJS', 'Material UI', 'Redux', 'Sun Editor', "Calendar"],
-        code: '',
-        demo: '',
-        role: 'Full Stack Developer',
-    }
+  {
+    id: 1,
+    name: "KAI Logistics Super Apps ( Web View)",
+    description:
+      "Membangun sistem logistik internal untuk PT Kereta Api Indonesia berbasis React.js. Fitur meliputi pendataan barang/logistik secara terstruktur, real-time tracking pergerakan barang, request & approval workflow, serta dashboard admin Laravel untuk CRUD data master seperti kategori, jenis barang, satuan, dan data pendukung lainnya.",
+    tools: ["React.js", "Laravel", "MySQL", "REST API", "Real-time Tracking"],
+    role: "Software Developer",
+      images: [
+      "/image/Projects/cms kai/1.png",
+      "/image/Projects/cms kai/2.png",
+      "/image/Projects/cms kai/3.png",
+     
+    ],
+    code: "",
+    demo: "",
+  },
+  {
+    id: 2,
+    name: "Sistem Pengelolaan Data Survey - PT Trakindo Utama",
+    description:
+      "Mengembangkan modul Complete Survey untuk menampilkan hasil survei yang telah selesai, modul Alert untuk approve/reject hasil survei, serta modul Not Yet Complete Survey untuk memantau survei yang sedang berjalan. Sistem dibangun menggunakan C# dan .NET (MVC) dengan integrasi database SQL Server dan MySQL.",
+    tools: [".NET (MVC)", "C#", "SQL Server", "MySQL", "JavaScript"],
+    role: ".NET Developer",
+      images: [
+      "/image/Projects/trakindo/1.png",
+      "/image/Projects/trakindo/2.png",
+      "/image/Projects/trakindo/3.png",
+      "/image/Projects/trakindo/4.png",
+    ],
+    code: "",
+    demo: "",
+  },
+  {
+    id: 3,
+    name: "Docking & Investment Monitoring – PT Pertamina International Shipping",
+    description:
+      "Membangun modul Docking Monitoring ... (isi lengkap Anda sendiri)",
+    tools: [".NET (MVC)", "C#", "SQL Server", "Chart.js", "JavaScript"],
+    role: ".NET Developer",
+
+    // Tambahkan ini:
+    images: [
+      "/image/Projects/dashboard monitoring/1.png",
+      "/image/Projects/dashboard monitoring/2.png",
+      "/image/Projects/dashboard monitoring/3.png",
+      "/image/Projects/dashboard monitoring/4.png",
+    ],
+
+    code: "",
+    demo: "",
+  },
+
+  {
+    id: 4,
+    name: "Sistem Artikel & Chat – PT Pertamina Patra Niaga",
+    description:
+      "Mengembangkan fitur Chat (private & group) untuk komunikasi antara admin dan agen, modul Daftar Artikel yang responsif serta mendukung SEO, dan fitur notifikasi real-time untuk artikel baru. Sistem membantu distribusi informasi dan manajemen konten internal.",
+    tools: ["Laravel", "JavaScript", "MySQL", "Realtime Notification"],
+    role: "Full Stack Developer",
+     images: [
+      "/image/Projects/Patraniaga dms/1.png",
+      "/image/Projects/Patraniaga dms/2.png",
+      "/image/Projects/Patraniaga dms/3.png",
+      "/image/Projects/Patraniaga dms/4.png",
+      "/image/Projects/Patraniaga dms/5.png",
+      "/image/Projects/Patraniaga dms/6.png",
+    ],
+    code: "",
+    demo: "",
+  },
+  {
+    id: 5,
+    name: "Sistem E-Learning & Development – PIS LCD",
+    description:
+      "Membangun modul E-Learning berisi kursus crew kapal dengan pre-test, materi pembelajaran (video/modul), post-test, serta penilaian otomatis. Mengembangkan modul Development untuk menyediakan materi pelatihan dan riwayat kursus yang telah dipelajari oleh crew.",
+    tools: [".NET (MVC)", "C#", "SQL Server", "JavaScript"],
+    role: ".NET Developer",
+    code: "",
+    demo: "",
+  },
+  {
+    id: 6,
+    name: "HR Master Data Management – PT Sinergi Gula Nusantara",
+    description:
+      "Mengembangkan aplikasi web untuk divisi Human Resources untuk pengelolaan data master karyawan, serta mendesain mockup aplikasi analisis laboratorium perusahaan menggunakan Laravel. Berperan sebagai backup untuk penanganan jaringan & sistem internal.",
+    tools: ["Laravel", "JavaScript", "MySQL", "UI/UX Mockup"],
+    role: "Frontend Developer (Intern)",
+     images: [
+      "/image/Projects/sgn/mockpup lab/1.png",
+      "/image/Projects/sgn/mockpup lab/2.png",
+      "/image/Projects/sgn/mockpup lab/3.png",
+     
+    ],
+    code: "",
+    demo: "",
+  }
 ];
-
-
-// Do not remove any property.
-// Leave it blank instead as shown below
-
-// {
-//     id: 1,
-//     name: '',
-//     description: "",
-//     tools: [],
-//     role: '',
-//     code: '',
-//     demo: '',
-// },

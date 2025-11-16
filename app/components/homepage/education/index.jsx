@@ -53,26 +53,50 @@ function Education() {
                         height={200}
                         className="absolute bottom-0 opacity-80"
                       />
+
+                      {/* Duration */}
                       <div className="flex justify-center">
                         <p className="text-xs sm:text-sm text-[#16f2b3]">
                           {education.duration}
                         </p>
                       </div>
-                      <div className="flex items-center gap-x-8 px-3 py-5">
-                        <div className="text-violet-500  transition-all duration-300 hover:scale-125">
+
+                      <div className="flex items-start gap-x-8 px-3 py-5">
+                        <div className="text-violet-500 transition-all duration-300 hover:scale-125">
                           <BsPersonWorkspace size={36} />
                         </div>
+
                         <div>
-                          <p className="text-base sm:text-xl mb-2 font-medium uppercase">
+                          {/* Title */}
+                          <p className="text-base sm:text-xl mb-1 font-medium uppercase">
                             {education.title}
                           </p>
+
+                          {/* Institution */}
                           <p className="text-sm sm:text-base">{education.institution}</p>
+
+                          {/* GPA */}
+                          {education.gpa && (
+                            <p className="text-sm sm:text-base text-[#16f2b3] mt-1">
+                              {education.gpa}
+                            </p>
+                          )}
+
+                          {/* Details */}
+                          {education.details && education.details.length > 0 && (
+                            <ul className="mt-3 list-disc list-inside text-xs sm:text-sm text-gray-300 space-y-1">
+                              {education.details.map((item, idx) => (
+                                <li key={idx}>{item}</li>
+                              ))}
+                            </ul>
+                          )}
                         </div>
                       </div>
                     </div>
                   </GlowCard>
                 ))
               }
+
             </div>
           </div>
         </div>
